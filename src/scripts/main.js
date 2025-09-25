@@ -1,17 +1,27 @@
 'use strict';
 
-// Елементи
-const field = document.querySelector('.wall');
+// // Елементи
+// const field = document.querySelector('.wall');
+// const spider = document.querySelector('.spider');
+
+// // Розміри елементів
+// const infoField = field.getBoundingClientRect();
+// const infoSpider = spider.getBoundingClientRect();
+
+// // Центрування павука
+// spider.style.position = 'absolute';
+// spider.style.top = (infoField.height - infoSpider.height) / 2 + 'px';
+// spider.style.left = (infoField.width - infoSpider.width) / 2 + 'px';
+
+// // Додаємо павука на поле
+// field.append(spider);
+
+const wall = document.querySelector('.wall');
 const spider = document.querySelector('.spider');
 
-// Розміри елементів
-const infoField = field.getBoundingClientRect();
-const infoSpider = spider.getBoundingClientRect();
-
-// Центрування павука
 spider.style.position = 'absolute';
-spider.style.top = (infoField.height - infoSpider.height) / 2 + 'px';
-spider.style.left = (infoField.width - infoSpider.width) / 2 + 'px';
+spider.style.top = '50%';
+spider.style.left = '50%';
+spider.style.transform = 'translate(-50%, -50%)';
 
-// Додаємо павука на поле
-field.append(spider);
+wall.append(spider);
